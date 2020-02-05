@@ -1,0 +1,10 @@
+type: google.api.Service
+config_version: 3
+name: echo.googleapis.com
+title: Showcase Echo API
+
+documentation:
+  summary: |-
+    This is a basic Echo service that is just used for testing client
+    library generation via the go_gapic_library Bazel macro. It does
+    not actually exists anywhere.
