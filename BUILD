@@ -51,3 +51,23 @@ go_gapic_library(
   service_yaml = ":echo_v1beta1.yaml",
   release_level = "alpha",
 )
+
+go_gapic_library(
+  name = "echo_go_gapic_sample",
+  srcs = [
+    # BUILD target for proto_library
+    ":echo_proto",
+  ],
+  deps = [
+    # BUILD target for go_library_proto
+    ":echo_go_proto",
+  ],
+  # go-gapic-package parameter value
+  importpath = "github.com/googleapis/bazel-microgen-test/client;client",
+  grpc_service_config = ":echo_grpc_service_config.json",
+  service_yaml = ":echo_v1beta1.yaml",
+  sample_only = True,
+  samples = [":echo_sample.yaml"],
+  gapic_yaml = ":echo_gapic.yaml",
+  release_level = "alpha",
+)

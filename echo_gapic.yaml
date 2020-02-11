@@ -1,0 +1,34 @@
+# FIXME: Address all the FIXMEs in this generated config before using it for
+# client generation. Remove this paragraph after you closed all the FIXMEs. The
+# retry_codes_name, required_fields, flattening, and timeout properties cannot
+# be precisely decided by the tooling and may require some configuration.
+type: com.google.api.codegen.ConfigProto
+config_schema_version: 2.0.0
+# The settings of generated code in a specific language.
+language_settings:
+  java:
+    package_name: com.google.showcase.v1beta1
+  python:
+    package_name: google.showcase_v1beta1.gapic
+  go:
+    package_name: cloud.google.com/go/showcase/apiv1beta1
+  csharp:
+    package_name: Google.Showcase.V1beta1
+  ruby:
+    package_name: Google::Showcase::V1beta1
+  php:
+    package_name: Google\Showcase\V1beta1
+  nodejs:
+    package_name: showcase.v1beta1
+# The configuration for the license header to put on generated files.
+license_header:
+  # The file containing the copyright line(s).
+  copyright_file: copyright-google.txt
+  # The file containing the raw license header without any copyright line(s).
+  license_file: license-header-apache-2.0.txt
+# A list of API interface configurations.
+interfaces:
+  # The fully qualified name of the API interface.
+- name: google.showcase.v1beta1.Echo
+  methods:
+  - name: Echo
